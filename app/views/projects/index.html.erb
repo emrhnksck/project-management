@@ -1,6 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Projects</h1>
+<h2 class="card-title d-flex justify-content-between">
+  <span>Projects</span>
+  <%= link_to "New project", new_project_path, class:"btn btn-primary" %>
+</h2>
 
 <div id="projects">
   <% @projects.each do |project| %>
@@ -11,4 +14,4 @@
   <% end %>
 </div>
 
-<%= link_to "New project", new_project_path %>
+
